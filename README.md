@@ -3,7 +3,7 @@ About pcdscalc
 
 Home: https://github.com/pcdshub/pcdscalc
 
-Package license: SLAC Open
+Package license: LicenseRef-BSD-3-Clause-SLAC
 
 Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/pcdscalc-feedstock/blob/master/LICENSE.txt)
 
