@@ -1,5 +1,5 @@
 {% set name = "pcdscalc" %}
-{% set version = "0.3.0" %}
+{% set version = "0.3.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/pcdshub/{{ name }}/archive/v{{ version }}.tar.gz
-  sha256: e0eed74b675f712291cecd82e6b55b7e6bb8722bf359ec97aad84ad48268ac88
+  sha256: af0b4d5ef74594484139c8ac4065d842a59414ae924d5230fe7f6dbc1d6b4877
 
 build:
   noarch: python
