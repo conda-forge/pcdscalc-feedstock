@@ -16,10 +16,11 @@ build:
 
 requirements:
   host:
-    - python >=3.6
+    - python >=3.9
     - pip
+    - setuptools_scm
   run:
-    - python >=3.6
+    - python >=3.9
     - numpy
     - xraydb
 
@@ -38,6 +39,7 @@ about:
 
 extra:
   recipe-maintainers:
+    - conda-forge/pcdsdevices
     - klauer
+    - tangkong
     - zllentz
-    - zrylettc
