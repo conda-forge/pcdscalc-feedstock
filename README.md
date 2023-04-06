@@ -1,11 +1,11 @@
-About pcdscalc
-==============
+About pcdscalc-feedstock
+========================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/pcdscalc-feedstock/blob/main/LICENSE.txt)
 
 Home: https://github.com/pcdshub/pcdscalc
 
 Package license: LicenseRef-BSD-3-Clause-SLAC
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/pcdscalc-feedstock/blob/main/LICENSE.txt)
 
 Summary: Control system-agnostic scientific calculation routines
 
