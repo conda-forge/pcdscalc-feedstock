@@ -1,5 +1,5 @@
 {% set name = "pcdscalc" %}
-{% set version = "0.4.2" %}
+{% set version = "0.5.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/pcdshub/{{ name }}/archive/v{{ version }}.tar.gz
-  sha256: 49d10eea4ec49376fb222c7b435b8178f118ba281ce4ade16f7f99f114215eaa
+  sha256: b6e8d496123557a75a2ae25427baac0fc591629a6ce846dcdc05f4cb086bd2ea
 
 build:
   noarch: python
@@ -22,7 +22,11 @@ requirements:
   run:
     - python >=3.9
     - numpy
+    - ophyd
+    - periodictable
+    - scipy
     - xraydb
+    - xraylib
 
 test:
   imports:
