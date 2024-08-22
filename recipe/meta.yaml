@@ -1,5 +1,5 @@
 {% set name = "pcdscalc" %}
-{% set version = "0.5.1" %}
+{% set version = "0.6.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/pcdshub/{{ name }}/archive/v{{ version }}.tar.gz
-  sha256: 93c252102d776c6b9447e7b31b35e5bd664be631f1be02c9fd4e6dd63f9df191
+  sha256: cfd11048e43dea51d0851ec8f283e4fddcc7934f65c3e0173dfd29a086e90575
 
 build:
   noarch: python
@@ -21,7 +21,7 @@ requirements:
     - setuptools_scm
   run:
     - python >=3.9
-    - numpy
+    - numpy <2.0
     - ophyd
     - periodictable
     - scipy
