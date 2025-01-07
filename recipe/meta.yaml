@@ -1,5 +1,6 @@
 {% set name = "pcdscalc" %}
 {% set version = "0.6.0" %}
+{% set python_min = "3.9" %}
 
 package:
   name: {{ name|lower }}
@@ -11,16 +12,17 @@ source:
 
 build:
   noarch: python
-  number: 0
+  number: 1
   script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
   host:
-    - python >=3.9
+    - python {{ python_min }}
     - pip
+    - setuptools
     - setuptools_scm
   run:
-    - python >=3.9
+    - python >={{ python_min }}
     - numpy <2.0
     - ophyd
     - periodictable
@@ -29,6 +31,8 @@ requirements:
     - xraylib
 
 test:
+  requires:
+    - python {{ python_min }}
   imports:
     - pcdscalc
 
