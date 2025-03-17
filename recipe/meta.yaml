@@ -23,7 +23,7 @@ requirements:
     - setuptools_scm
   run:
     - python >={{ python_min }}
-    - numpy <2.0
+    - numpy
     - ophyd
     - periodictable
     - scipy
